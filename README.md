@@ -17,4 +17,4 @@ Steps:
 3. Download the css file from here : https://materializecss.com/getting-started.html and it in the style tag in HTML file
 
 
-![alt text](
+![alt text](https://github.com/ajazturki10/deploying_model_using_FLASK/blob/main/Web%20Interface.PNG)
