@@ -7,7 +7,7 @@ model = joblib.load(open("wine_quality_predictor.pkl", "rb"))
 
 @app.route('/')
 def home():
-    return render_template('wine_index.html')
+    return render_template('index.html')
 
 @app.route('/predict',methods=['POST','GET'])
 def predict():
@@ -19,9 +19,9 @@ def predict():
     output = round(prediction[0], 2)
 
     if output == 1.0:
-        return render_template('wine_index.html', pred = 'Good')
+        return render_template('index.html', pred = 'Good')
     else:
-        return render_template('wine_index.html', pred = 'Harmful')
+        return render_template('index.html', pred = 'Harmful')
 
 @app.route('/results',methods=['POST', 'GET'])
 def results():
